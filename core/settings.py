@@ -41,8 +41,7 @@ INSTALLED_APPS = [
     # installed packages
     "django_vite",
     "inertia",
-    
-    "businesses"
+    "businesses",
 ]
 
 MIDDLEWARE = [
@@ -57,7 +56,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-  
+
 ROOT_URLCONF = "core.urls"
 
 TEMPLATES = [
@@ -107,7 +106,6 @@ AUTH_PASSWORD_VALIDATORS = [
         "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
     },
 ]
-
 
 
 # Internationalization
@@ -176,8 +174,9 @@ INERTIA_LAYOUT = BASE_DIR / "templates/index.html"
 
 
 ##inertia specific settings
-CSRF_HEADER_NAME = 'HTTP_X_XSRF_TOKEN'
-CSRF_COOKIE_NAME = 'XSRF-TOKEN'
+CSRF_HEADER_NAME = "HTTP_X_XSRF_TOKEN"
+CSRF_COOKIE_NAME = "XSRF-TOKEN"
+
 
 # Vite generates files with 8 hash digits
 # http://whitenoise.evans.io/en/stable/django.html#WHITENOISE_IMMUTABLE_FILE_TEST
