@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     # installed packages
     "django_vite",
     "inertia",
+    
+    "businesses"
 ]
 
 MIDDLEWARE = [
@@ -55,6 +57,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
+  
 ROOT_URLCONF = "core.urls"
 
 TEMPLATES = [
