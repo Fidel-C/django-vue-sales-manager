@@ -1,14 +1,8 @@
-<template>
-    <div>
-
-    <div>This  is a vue app in django developed by {{dev}}</div>
-
-    </div>
-</template>
-
 <script setup lang="ts">
-import { toRefs } from 'vue'
+import { toRefs,ref } from 'vue'
 
+
+const count=ref(0)
 
 
 const props=defineProps(['dev'])
@@ -17,6 +11,16 @@ toRefs(props)
 
 
 </script >
+
+
+<template>
+    <div>
+
+
+    </div>
+</template>
+
+
 
 <style scoped>
 
