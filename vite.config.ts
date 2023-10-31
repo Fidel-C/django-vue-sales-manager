@@ -29,6 +29,7 @@ export default defineConfig({
     rollupOptions: {
       // Overwrite default .html entry to main.ts in the static directory
       input: resolve("./static/src/main.ts"),
+      
     },
   },
 });
